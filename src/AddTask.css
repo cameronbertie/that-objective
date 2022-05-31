@@ -1,0 +1,329 @@
+.add-task-container {
+z-index: 1; /* Sit on top */
+position: absolute; 
+  left: 64px; 
+  top: 205px;
+  width: 448px;
+  color: white;
+  background-color: #8E24AA;
+  padding: 17px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13.28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  height: auto;
+}
+
+.icon-image {
+  height: 20px;
+    width: 20px;
+}
+
+.date-container {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+column-gap: 6px;
+}
+
+.description-container {
+  display: flex;
+justify-content: flex-start;
+align-items: center;
+column-gap: 6px;
+}
+
+.location-container {
+  display: flex;
+justify-content: flex-start;
+align-items: center;
+column-gap: 6px;
+}
+
+.subtask-title-container {
+  display: flex;
+justify-content: flex-start;
+align-items: center;
+column-gap: 6px;
+}
+
+.tool-name-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.tool-name {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 13.28px;
+}
+
+.tool-name-arrow {
+  width: auto;
+  height: 10px;
+  margin: 0 6px;
+}
+
+.add-task-name{
+    font-size: 24px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    font-family: inherit;
+    outline:none;
+    caret-color: white;
+    border-bottom: white 1px solid;
+    color: white;
+}
+
+.add-task-name:active{
+    border-bottom: white 1px solid;
+    outline:none;
+}
+
+.add-task-name::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 1; /* Firefox */
+  }
+  
+  .add-task-name:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  .add-task-name::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .add-task-date {
+    background: none;
+    border: none;
+    font-family: inherit;
+    outline:none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13.28px;
+    cursor: pointer;
+    caret-color: transparent;
+    width: auto;
+    width: 100%;
+  }
+
+  .add-task-date:hover {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .add-task-date:focus{
+    background: rgba(255, 255, 255, 0.2);;
+  }
+
+  textarea{  
+    overflow:hidden;
+    font-size: 13.28px;
+    font-weight: 700;
+    font-family: inherit;
+    display:block;
+    resize: none;
+    background: none;
+    border: none;
+    outline:none;
+    caret-color: white;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 1; /* Firefox */
+  }
+  
+  textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  textarea::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  textarea:active{
+    outline:none;
+}
+
+textarea:focus{
+  background: rgba(255, 255, 255, 0.2);;
+}
+
+textarea:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+  
+
+  .add-task-location {
+    font-size: 13.28px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    font-family: inherit;
+    outline:none;
+    caret-color: white;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .add-task-location:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .add-task-location:focus{
+    background: rgba(255, 255, 255, 0.2);;
+  }
+
+
+
+.add-task-location::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 1; /* Firefox */
+  }
+  
+  .add-task-location:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  .add-task-location::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .save-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .save-btn {
+    background: white;
+    font-family: inherit;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    color: #8E24AA;
+    padding: 10px;
+    width: 89px;
+    cursor: pointer;
+  }
+
+  .save-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .close-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+
+  .add-subtask-btn-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .add-subtask-btn {
+    background: white;
+    font-family: inherit;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    color: #8E24AA;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 26px;
+  }
+
+  .add-subtask-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .subtask-container {
+    display: flex;
+    row-gap: 8px;
+  }
+
+  .inner {
+    display: flex;
+    row-gap: 8px;
+    flex-direction: column;
+    border-top: 1px solid white;
+    padding-top: 8px;
+  }
+
+  .subtask-title {
+    font-family: inherit;
+    font-weight: 700;
+    color: white;
+  }
+
+  .subtask-input {
+    font-size: 13.28px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    font-family: inherit;
+    outline:none;
+    caret-color: white;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin-left: 26px;
+  }
+
+  .subtask-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 1; /* Firefox */
+  }
+  
+  .subtask-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  .subtask-input::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .subtask-input:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .subtask-input:focus{
+    background: rgba(255, 255, 255, 0.2);;
+  }
+
+  .delete-subtask-img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .delete-subtask-img:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+

@@ -1,0 +1,144 @@
+.popup-container {
+    z-index: 99; /* Sit on top */
+    position: absolute; 
+  width: 448px;
+  color: white;
+  background-color: #8E24AA;
+  padding: 17px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13.28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.popup-title {
+  font-size: 24px; 
+}
+
+.popup-date {
+  
+}
+
+.btn-container {
+  display: flex;
+justify-content: space-between;
+}
+
+.btn-inner-container-1 {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.btn-inner-container-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-image-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+justify-content: center;
+cursor: pointer;
+}
+
+.btn-image-container:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.btn-image {
+  height: 25px;
+  width: auto;
+}
+
+.btn-complete {
+ background-color: #FFFFFF;
+ font-weight: 900;
+ font-size: 13.28px;
+ border: none;
+ font-family: inherit;
+ padding: 10px;
+ height: 45px;
+ color: #8E24AA;
+ border-radius: 10px;
+ cursor: pointer;
+}
+
+.btn-complete:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+textarea{  
+  overflow:hidden;
+  font-size: 13.28px;
+  font-weight: 700;
+  font-family: inherit;
+  display:block;
+  resize: none;
+  background: none;
+  border: none;
+  outline:none;
+  caret-color: white;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.65);
+  opacity: 1; /* Firefox */
+}
+
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.65);
+}
+
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.65);
+}
+
+textarea:active{
+  outline:none;
+}
+
+textarea:focus{
+background: rgba(255, 255, 255, 0.2);;
+}
+
+textarea:hover{
+background: rgba(255, 255, 255, 0.2);
+}
+
+.subtask-popup-container {
+  display: flex;
+  flex-direction: column;
+    row-gap: 8px;
+    border-top: 1px solid white;
+    padding-top: 8px;
+}
+
+.subtask-list {
+  display: flex;
+  flex-direction: column;
+}

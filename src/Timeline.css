@@ -1,0 +1,112 @@
+.container {
+    color: white;
+    display: grid;
+    grid-template-columns: 64px 1fr 1fr 1fr 1fr 1fr 64px;
+    margin-top: -36px;
+    z-index: 1;
+    position: relative;
+}
+
+.left-tools-container {
+    padding-top: 68px;
+}
+
+.right-tools-container {
+    border-left: #492833 solid 1px;
+    padding-top: 68px;
+}
+
+.change-date-btn-container {
+    display: flex;
+justify-content: center;
+margin-bottom: 22px;
+
+}
+
+.change-date-btn {
+    width: 28px;
+    height: 48px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.change-date-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.crosshair-btn-container {
+    display: flex;
+justify-content: center;
+margin-bottom: 19px;
+}
+
+.crosshair-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+cursor: pointer;
+padding: 5px;
+}
+
+.crosshair-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tools-container {
+    display: flex;
+justify-content: center;
+}
+
+.add-task-btn-container {
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 19px;
+width: 38px;
+height: 38px;
+background-color: #8E24AA;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.add-task-btn-container:hover {
+    background: rgba(142,36,170,0.8);
+}
+
+.add-task-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.day-container {
+    border-left: #492833 solid 1px;
+    height: 100vh;
+}
+
+.day-header {
+    text-align: center;
+    border-bottom: 1px solid #492833;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+.day-name {
+    margin: 0;
+    font-size: 18.72px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.date-name {
+    margin: 0;
+    font-size: 13.28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.day-content {
+    padding: 10px;
+}
+
+

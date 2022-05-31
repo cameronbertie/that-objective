@@ -1,0 +1,13 @@
+.task-container {
+    background-color: #8E24AA;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 13.28px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.task-container:hover {
+    background-color: rgba(142,36,170,0.8)
+}
