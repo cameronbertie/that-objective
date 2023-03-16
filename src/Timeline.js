@@ -14,6 +14,7 @@ import { v4 as uuidv4 } from "uuid";
 import { id } from "date-fns/locale";
 import './Timeline.css';
 import AddTask from './AddTask';
+import Header from "./Header";
 
 firebase.initializeApp({
   apiKey: "AIzaSyDxTLgnuty0YnBxe6WWrclMbpfRSEpcG_8",
@@ -403,6 +404,8 @@ export default function Timeline() {
 
 
   return (
+    <>
+    <Header />
     <div>
     <div className="container">
       <div className="left-tools-container">
@@ -484,6 +487,6 @@ export default function Timeline() {
     <AddTask trigger={showAddTask} setTrigger={setShowAddTask} />
     </div>
     </div>
-    
+    </>
   )
 }

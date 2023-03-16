@@ -26,7 +26,7 @@ const [user] = useAuthState(auth);
 
   return (
     <div>
-      <Header />
+      
       <section>{user ? <Timeline /> : <SignIn />}</section>
     </div>
   );

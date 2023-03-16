@@ -112,8 +112,14 @@ console.log("this works")
 
 }
 
+function handleDeleteSubtask() {
+  firestore.collection("tasks").doc(documentId).collection('subtasks').doc(id).delete();
+  console.log(id);
+}
+
   return (
-    <div className="subtask-name" onClick={() => handleSubtaskComplete(id)}>
+    <div className="subtask-name">
+      <div className="subtask-name-content" onClick={() => handleSubtaskComplete(id)}>
       {/* <input
         id="myCheck"
         defaultChecked={complete}
@@ -123,11 +129,19 @@ console.log("this works")
         }}
         
       ></input> */}
+      
+      <div className="name-container">
       {complete ?
       <img className="icon-image" src="check-circle.svg" />
       : <img className="icon-image" src="circle.svg" />
       }
       <div   className="subtask-text" style={{ textDecoration: complete ? 'line-through': 'none'}}>{name}</div>
+      </div>
+      
+      </div>
+      
+      <img className="delete-subtask-img" src="trash-alt.svg" onClick={() => handleDeleteSubtask()}/>
+      
     </div>
   );
 }

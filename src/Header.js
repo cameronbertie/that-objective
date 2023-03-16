@@ -7,7 +7,7 @@ export default function Header() {
     <header>
       
         <img className="logo" src="/logo.svg" alt="React Logo" />
-        <div className="personal-message">Good Afternoon,  Cameron</div>
+        <div className="personal-message">Welcome!</div>
         
     </header>
   )

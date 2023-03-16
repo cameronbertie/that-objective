@@ -1,0 +1,54 @@
+.logo-signIn{
+    padding: 5px 0;
+    height: auto;
+    width: 50%;
+}
+
+.signIn-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+    align-items: center;
+}
+
+.demo-heading {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.signIn-button{
+        background: #c18794;
+        font-family: inherit;
+        font-weight: 900;
+        border: none;
+        border-radius: 10px;
+        color: black;
+        padding: 10px;
+        width: auto;
+        cursor: pointer;
+        text-transform: uppercase;
+}
+
+.signIn-button:hover{
+    color: black;
+    background: white;
+    transition: 300ms;
+}
+
+.signIn-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .developer-notes {
+    color: white;
+    font-size: 13.28px;
+    text-align: center;
+    max-width: 60ch;
+  }

@@ -4,6 +4,7 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
+import './SignIn.css'
 
 firebase.initializeApp({
   apiKey: "AIzaSyDxTLgnuty0YnBxe6WWrclMbpfRSEpcG_8",
@@ -25,10 +26,17 @@ function signInWithGoogle() {
 
 export default function SignIn() {
 
-
     const [user] = useAuthState(auth);
 
   return (
-    <button onClick={signInWithGoogle}>Sign in with Google</button>
+    <div className="signIn-container">
+      <img className="logo-signIn" src="/logo-white.svg" alt="React Logo" />
+      <div className="demo-heading">DEMO VERSION</div>
+      <div className="signIn-button-container">
+      <button className="signIn-button" onClick={signInWithGoogle}>Sign in with Google</button>
+      </div>
+      <p className="developer-notes">This demo is currently a work in progress. Therefore the application is limited of it's features and has not yet been optimised for mobile or tablet devices.</p>
+    </div>
+    
   )
 }
